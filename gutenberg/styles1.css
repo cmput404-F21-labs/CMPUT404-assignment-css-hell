@@ -1,0 +1,192 @@
+body {
+    /* changes to body */
+    background-color: #E0C9A6;
+    color: #2f2f2fec;
+    font-family: sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* changes to body */
+}
+
+h1,h2,h3 {
+    /* Header Styles */
+    font-weight: 750;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+    color: #2f2f2f;
+    /* Header Styles */
+    text-align: center;
+    clear: both;
+}
+
+/* Colour Palette: https://www.color-hex.com/color-palette/104468 */
+/* Changes to a */
+a {
+    font-weight: bold;  
+}
+a:link {
+    color:  #cc915c;
+}
+a:visited {
+    color: #513a24;
+}
+a:hover {
+    color: #d4a262;
+}
+a:active {
+    color: #fffbb6;
+} 
+/* Changes to a */
+
+/* Imported font */
+@font-face {
+    font-family: "Lobster-Regular";
+    src: url("/fonts/Lobster-Regular.ttf") format("truetype");
+}
+/* Imported font */
+
+/* Added separate font to preread */
+pre {
+    font-family:'Lobster-Regular';
+}
+/* Added separate font to preread */
+
+.not_visible {visibility: hidden;}
+
+p {
+    margin-top: .51em;
+    text-align: justify;
+    /* changes to p */
+    margin-bottom: 1.2em;
+    /* changes to p */
+}
+
+p.plate    {margin-top: 1em; margin-right: 15%; text-align: right;}
+p.author   {margin-top: 1em; margin-right: 10%; text-align: right;}
+p.indent   {text-indent: 1.5em;}
+p.f90      {font-size: 90%;  text-align: center;}
+p.f110     {font-size: 110%; text-align: center;}
+p.f120     {font-size: 120%; text-align: center;}
+p.f150     {font-size: 150%; text-align: center;}
+p.f200     {font-size: 200%; text-align: center;}
+
+.space-above1 {margin-top: 1em;}
+.space-above2 {margin-top: 2em;}
+.space-above3 {margin-top: 3em;}
+
+.space-below1 {margin-bottom: 1em;}
+.space-below2 {margin-bottom: 2em;}
+.space-below3 {margin-bottom: 3em;}
+
+hr.tb   {width: 45%; margin-left: 27.5%; margin-right: 27.5%; }
+hr.chap {width: 65%; margin-left: 17.5%; margin-right: 17.5%; }
+hr.full {width: 95%; margin-left: 2.5%; margin-right: 2.5%; }
+hr.r5   {width: 5%; margin-top: 1em; margin-bottom: 1em; margin-left: 47.5%; margin-right: 47.5%; }
+hr.r25  {width: 25%; margin-top: 3em; margin-bottom: 3em; margin-left: 37.5%; margin-right: 37.5%; }
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tdl {text-align: left;}
+.tdr {text-align: right;}
+
+.blockquot {
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.sidenote {
+    width: 15%;
+    padding-bottom: 0.3em;
+    padding-top: 0em;
+    padding-left: 0em;
+    padding-right: 0.5em;
+    margin-left: 1em;
+    float: left;
+    clear: left;
+    margin-top: 1em;
+    font-size: smaller;
+    color: black;
+}
+
+.bbox     {border: solid medium; padding: 0.5em;}
+.center   {text-align: center;}
+.smcap    {font-variant: small-caps;}
+
+.figcenter   {
+    margin: auto;
+    text-align: center;
+}
+
+.figleft {
+    float: left;
+    clear: left;
+    margin-left: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 0;
+    text-align: center;
+}
+
+.figright {
+    float: right;
+    clear: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-right: 0;
+    padding: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+    /* changes to img */
+    box-shadow: 15px 10px 5px #837e7886;
+    margin-bottom: 5px;
+    opacity: .75;
+    transition: opacity .2s linear;
+    /* changes to img */
+}
+/* transition to opacity */
+img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+/* transition to opacity */
+img.drop-cap {
+    float: left;
+    margin: 0 0.5em 0 0;
+    height: 4em;
+    box-shadow: none;
+}
+
+img.drop-cap { float: left;
+                 margin: 0 0.5em 0 0; }
+
+p.drop-cap:first-letter { color: white;
+                            visibility: hidden;
+                            margin-left: -0.6em; }
+
+@media handheld
+{
+  img.drop-cap  { display: none; }
+
+  p.drop-cap:first-letter { color: inherit;
+                            visibility: visible;
+                            margin-left: 0; }
+}
+
+.pagebreak {page-break-before: always;}
+
+.transnote {background-color: #E6E6FA;
+    color: black;
+     font-size:smaller;
+     padding:0.5em;
+     margin-bottom:5em;
+     font-family:sans-serif, serif; }
