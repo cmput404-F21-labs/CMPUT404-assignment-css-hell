@@ -1,0 +1,55 @@
+body {
+    width: 1400px;
+    height: 1050px;
+    background: black;
+    background-image: url("static/cover.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+}
+
+.songs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    color:#ffef00;
+    font-weight: bold;
+    text-shadow: 3px 3px #27d1f4;
+}
+
+.column {
+    position: relative;
+    z-index: 10;
+}
+.row {
+    position: relative;
+    z-index: 10;
+}
+.footer {
+    position: relative;
+    z-index: 10;
+}
+img {
+    position: absolute;
+    z-index: 0;
+    left: 10%
+}
+
+.navigation li{
+    background-color: #ffef00;
+}

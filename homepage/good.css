@@ -1,0 +1,162 @@
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+    color: white;
+    padding: 0 5px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #27d1f4;
+    margin: 0;
+    padding: 12px 12px 0px 12px;
+    text-decoration: underline;
+}
+.sidebar h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 12px;
+}
+.footer h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+}
+.container {
+    width: 1100px;
+    background: transparent;
+    border-radius: 12px;
+    margin: 0 auto; 
+}
+.main {
+    display: flex;
+    margin: 20px 0;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+body {
+    background: black;
+    background-image: url("static/background.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header {
+    background-image: url("static/header.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    /* border: 1px solid #ffef00;
+    box-shadow: 0px 0px 5px rgba(255,239,0,0.75); */
+    border: 1px solid #27d1f4;
+    box-shadow: 0px 0px 5px #27d2f4b9;
+    margin: 10px 0 40px 0px;
+    height: 250px;
+    position:relative;
+}
+.p-container {
+    border-radius: 12px;
+    /* border: 1px solid #ffef00;
+    box-shadow: 0px 0px 5px rgba(255,239,0,0.75); */
+    border: 1px solid #27d1f4;
+    box-shadow: 0px 0px 5px #27d2f4b9;
+    padding: 10px;
+    margin: 15px;
+    line-height: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+img {
+    border-radius: 12px;
+    border: 2px solid #ffef00;
+    box-shadow: 0px 0px 5px rgba(255,239,0,0.75);
+    /* border: 1px solid #27d1f4;
+    box-shadow: 0px 0px 5px #27d2f4b9; */
+    margin: 15px;
+}
+.sidebar {
+    width: 260px;
+    height: 100%;
+    overflow: auto;
+    background-color: #101010;
+    border-radius: 12px;
+    /* border: 1px solid #ffef00;
+    box-shadow: 0px 0px 5px rgba(255,239,0,0.75); */
+    border: 1px solid #27d1f4;
+    box-shadow: 0px 0px 5px #27d2f4b9;
+    text-align: center;
+}
+.sidebar p {
+    text-align: center;
+    margin: 8px auto;
+}
+.sidebar a, .footer a{
+    color:#ffef00;
+    font-weight: bold;
+    text-shadow: 1.5px 1px #27d1f4;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+    padding: 0 5px;
+}
+.sidebar a {
+    display: block;
+}
+.content {
+    width: 818px;
+    float: left;
+    background-color: #101010;
+    border-radius: 12px;
+    /* border: 1px solid #27d1f4;
+    box-shadow: 0px 0px 5px #27d2f4b9; */
+    border: 1px solid #ffef00;
+    box-shadow: 0px 0px 5px rgba(255,239,0,0.75);
+    margin-right: 20px;
+}
+
+.navigation {
+    top: 220px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+}
+.navigation li{
+    padding: 15px 10px;
+    background-color: #101010;
+    border-radius: 12px;
+    border: 2px solid #27d1f4;
+    box-shadow: 0px 0px 7px #27d2f4b9;
+}
+.navigation li:nth-child(even) {
+    border: 1px solid #ffef00;
+    box-shadow: 0px 0px 5px rgba(255,239,0,0.75)
+}
+.navigation a {
+    color:#ffef00;
+    font-weight: bold;
+    text-shadow: 1.5px 1px #27d1f4;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+    padding: 10px 0;
+    background-color: #101010;
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid #ffef00;
+    box-shadow: 0px 0px 5px rgba(255,239,0,0.75)
+}
