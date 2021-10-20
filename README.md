@@ -9,6 +9,10 @@ CSS was cleaned up a lot and probably only 1 original rule is used in the final 
 Colour scheme(Blue and Yellow), Images and Bio text was taken from the wiki: https://cyberpunk.fandom.com/wiki/Johnny_Silverhand
 Both of the sources are referenced on the webpage.
 
+Good png is zoomed out which break out of usual website size where the background image does not cover the full page.
+Background image is specifically set not to repeat and black background is placed underneath.
+Most of the time, only a part of that background would be seen.
+
 
 Assignment: CSS Hell
 ====================
